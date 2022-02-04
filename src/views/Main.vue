@@ -2,12 +2,18 @@
   <div class="main container">
       <h1>Главная</h1>
       <p>Добро пожаловать на страницу новостей!</p>
+      <slider/>
   </div>
 </template>
 
 <script>
+import Slider from '../components/Slider'
+
 export default {
-  name: "Main"
+    name: "Main",
+    components: {
+      Slider
+    }
 }
 </script>
 

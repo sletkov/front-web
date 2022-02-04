@@ -1,7 +1,8 @@
 import VueRouter from 'vue-router'
-import Main from "../pages/Main"
-import News from "../pages/News"
-import NewsDetail from "../pages/NewsDetail"
+import Main from "../views/Main"
+import News from "../views/News"
+import NewsDetail from "../views/NewsDetail"
+import Gallery from "../views/Gallery"
 
 export default new VueRouter({
     mode: 'history',
@@ -20,6 +21,11 @@ export default new VueRouter({
             path: '/news/:id',
             name: 'NewsDetail',
             component: NewsDetail,
+        },
+        {
+            path: '/gallery',
+            name: 'Gallery',
+            component: Gallery,
         },
     ]
 })
